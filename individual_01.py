@@ -1,10 +1,7 @@
-text = input("Введите предложение: ")
+s = input("Введите предложение: ")
 
-clean_text = text.strip()
+words = s.split()
 
-while '  ' in clean_text:
-    clean_text = clean_text.replace('  ', ' ')
+count = len(words)
 
-count = clean_text.count(' ') + 1
-
-print(f"Количество слов: {count}")
+print("Количество слов:", count)
